@@ -1,18 +1,18 @@
-import { Avatar } from '../design-system/Avatar'
-import { Button } from '../design-system/Button'
-import { Card } from '../design-system/Card'
-import { BackChevronIcon, StarIcon } from '../design-system/icons'
-import { MookaIllustration } from '../design-system/MookaIllustration'
-import { Price } from '../design-system/Price'
-import { matchedPsychologists } from '../domain/mockData'
-import type { Psychologist } from '../domain/psychologist'
-import { BottomNav } from '../shell/BottomNav'
-import './ResultsScreen.css'
+import { Avatar } from '../design-system/Avatar';
+import { Button } from '../design-system/Button';
+import { Card } from '../design-system/Card';
+import { BackChevronIcon, StarIcon } from '../design-system/icons';
+import { MookaIllustration } from '../design-system/MookaIllustration';
+import { Price } from '../design-system/Price';
+import { matchedPsychologists } from '../domain/mockData';
+import type { Psychologist } from '../domain/psychologist';
+import { BottomNav } from '../shell/BottomNav';
+import './ResultsScreen.css';
 
 type ResultsScreenProps = {
-  onBack: () => void
-  onFindAnother: () => void
-}
+  onBack: () => void;
+  onFindAnother: () => void;
+};
 
 export function ResultsScreen({ onBack, onFindAnother }: ResultsScreenProps) {
   return (
@@ -27,9 +27,14 @@ export function ResultsScreen({ onBack, onFindAnother }: ResultsScreenProps) {
           >
             <BackChevronIcon />
           </button>
-          <MookaIllustration variant="friends" className="results-screen__art" />
+          <MookaIllustration
+            variant="friends"
+            className="results-screen__art"
+          />
           <p className="results-screen__headline">
-            มูก้าคัดนักจิตวิทยาที่เหมาะกับคุณมาให้แล้ว...
+            มูก้าคัดนักจิตวิทยา
+            <br />
+            ที่เหมาะกับคุณมาให้แล้ว...
           </p>
         </div>
 
@@ -49,7 +54,7 @@ export function ResultsScreen({ onBack, onFindAnother }: ResultsScreenProps) {
       </div>
       <BottomNav activeTab={1} />
     </div>
-  )
+  );
 }
 
 function ResultCard({ psychologist }: { psychologist: Psychologist }) {
@@ -75,5 +80,5 @@ function ResultCard({ psychologist }: { psychologist: Psychologist }) {
         </div>
       </div>
     </Card>
-  )
+  );
 }
