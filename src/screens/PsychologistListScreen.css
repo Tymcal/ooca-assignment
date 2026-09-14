@@ -86,6 +86,10 @@
 
 .list-screen__promo-art {
   flex-shrink: 0;
+  display: block;
+  width: 100px;
+  height: auto;
+  object-fit: contain;
 }
 
 .list-screen__promo-body {

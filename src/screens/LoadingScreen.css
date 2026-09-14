@@ -10,7 +10,11 @@
 }
 
 .loading-screen__art {
+  display: block;
+  width: 160px;
+  height: auto;
   margin-bottom: var(--space-2);
+  object-fit: contain;
 }
 
 .loading-screen__spinner {

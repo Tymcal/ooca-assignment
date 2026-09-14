@@ -35,7 +35,11 @@
 }
 
 .results-screen__art {
+  display: block;
+  width: 200px;
+  height: auto;
   margin-top: var(--space-2);
+  object-fit: contain;
 }
 
 .results-screen__headline {
