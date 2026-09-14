@@ -43,5 +43,6 @@
 .ds-button--sm {
   min-height: 36px;
   padding: 0 var(--space-4);
-  font-size: var(--font-size-sm);
+  font-size: var(--type-button-sm-th-size);
+  line-height: var(--type-button-sm-th-line);
 }

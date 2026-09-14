@@ -76,6 +76,7 @@ export function InquiryScreen({ onBack, onComplete }: InquiryScreenProps) {
 
       <div className="inquiry-screen__cta-wrap">
         <Button
+          size="sm"
           className="inquiry-screen__cta"
           onClick={onComplete}
           disabled={!canComplete}

@@ -46,6 +46,8 @@
   --space-8: 32px;
 
   --font-family: 'Gotham Rounded', 'Prompt', system-ui, sans-serif;
+  --font-family-number: 'Gotham Rounded', system-ui, sans-serif;
+  --font-family-thai: 'Prompt', system-ui, sans-serif;
   --font-size-xs: 11px;
   --font-size-sm: 13px;
   --font-size-md: 15px;
@@ -54,6 +56,18 @@
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 600;
+
+  --type-headline-3-size: 24px;
+  --type-headline-3-line: 26px;
+  --type-heading-3-size: 16px;
+  --type-heading-3-line: 27px;
+  --type-heading-3-line-snug: 20px;
+  --type-body-2-size: 13px;
+  --type-body-2-line: 20px;
+  --type-number-size: 13px;
+  --type-number-line: 20px;
+  --type-button-sm-th-size: 16px;
+  --type-button-sm-th-line: 16px;
 
   --touch-min: 44px;
   --shell-max-width: 430px;

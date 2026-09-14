@@ -45,10 +45,10 @@
 .results-screen__headline {
   margin: var(--space-4) 0 0;
   max-width: 280px;
-  font-size: var(--font-size-lg);
+  font-size: var(--type-headline-3-size);
   font-weight: var(--font-weight-medium);
   color: var(--color-text);
-  line-height: 1.45;
+  line-height: var(--type-headline-3-line);
 }
 
 .results-screen__cards {
@@ -80,9 +80,9 @@
 
 .result-card__name {
   margin: 0;
-  font-size: var(--font-size-md);
+  font-size: var(--type-heading-3-size);
   font-weight: var(--font-weight-bold);
-  line-height: 1.35;
+  line-height: var(--type-heading-3-line);
 }
 
 .result-card__meta {
@@ -94,8 +94,9 @@
 
 .result-card__role {
   color: var(--color-primary);
-  font-size: var(--font-size-sm);
+  font-size: var(--type-body-2-size);
   font-weight: var(--font-weight-medium);
+  line-height: var(--type-body-2-line);
 }
 
 .result-card__rating {
@@ -103,8 +104,10 @@
   align-items: center;
   gap: 3px;
   color: var(--color-primary);
-  font-size: var(--font-size-sm);
+  font-family: var(--font-family-number);
+  font-size: var(--type-number-size);
   font-weight: var(--font-weight-medium);
+  line-height: var(--type-number-line);
 }
 
 .result-card__price {

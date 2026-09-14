@@ -11,7 +11,11 @@ export function Price({ amount, durationMinutes = 30 }: PriceProps) {
     <span className="ds-price">
       <PriceTagIcon />
       <span>
-        {formatted} บาท / {durationMinutes} นาที
+        <span className="ds-price__num">{formatted}</span>{' '}
+        <span className="ds-price__label">บาท</span>
+        {' / '}
+        <span className="ds-price__num">{durationMinutes}</span>{' '}
+        <span className="ds-price__label">นาที</span>
       </span>
     </span>
   )

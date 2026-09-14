@@ -110,9 +110,9 @@
 .list-screen__promo-line {
   margin: 0;
   width: 100%;
-  font-size: var(--font-size-sm);
+  font-size: var(--type-heading-3-size);
   font-weight: var(--font-weight-medium);
-  line-height: 1.45;
+  line-height: var(--type-heading-3-line-snug);
 }
 
 .list-screen__promo-line--dark {
@@ -150,9 +150,9 @@
 
 .psych-card__name {
   margin: 0;
-  font-size: var(--font-size-md);
+  font-size: var(--type-heading-3-size);
   font-weight: var(--font-weight-bold);
-  line-height: 1.35;
+  line-height: var(--type-heading-3-line);
 }
 
 .psych-card__role {
@@ -160,8 +160,9 @@
   align-items: center;
   gap: 6px;
   color: var(--color-primary);
-  font-size: var(--font-size-sm);
+  font-size: var(--type-body-2-size);
   font-weight: var(--font-weight-medium);
+  line-height: var(--type-body-2-line);
 }
 
 .psych-card__rating {

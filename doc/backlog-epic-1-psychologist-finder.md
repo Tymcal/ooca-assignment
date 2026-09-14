@@ -22,6 +22,12 @@
 - **Deliverable:** Components under `src/design-system/`
 - **Status:** done
 
+### TASK-1.1.3: Type styles (Headline 3 / Heading 3 / Body 2 / numbers)
+
+- **Detail:** Add named type tokens: Headline 3 (24/26) for loading + results headlines; Heading 3 (16/27) for psychologist names and (16/20 snug) for list promo lines; Body 2 (13/20) for role subtitles; numbers always Gotham Rounded 13/20 on Price and ratings; Button/small/TH (16/16) on `.ds-button--sm` including inquiry CTA and promo “ช่วยหาให้หน่อย”.
+- **Deliverable:** tokens in `src/design-system/tokens.css`, updated Loading/Results/List/Inquiry screens, `Price.css`, `Button.css`
+- **Status:** done
+
 ---
 
 ## US-1.2: Browse psychologists

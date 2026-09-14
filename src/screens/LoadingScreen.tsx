@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { MookaIllustration } from '../design-system/MookaIllustration'
+import './LoadingScreen.css'
 
 type LoadingScreenProps = {
   onDone: () => void
@@ -23,7 +24,7 @@ export function LoadingScreen({ onDone, delayMs = 2000 }: LoadingScreenProps) {
         role="status"
         aria-label="กำลังโหลด"
       />
-      <p className="m-0 text-lg font-medium text-text">มูก้ากำลังหาให้อยู่นะ...</p>
+      <p className="loading-screen__headline">มูก้ากำลังหาให้อยู่นะ...</p>
     </div>
   )
 }

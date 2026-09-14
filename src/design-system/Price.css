@@ -3,6 +3,15 @@
   align-items: center;
   gap: 6px;
   color: var(--color-primary);
-  font-size: var(--font-size-sm);
+  font-size: var(--type-number-size);
   font-weight: var(--font-weight-medium);
+  line-height: var(--type-number-line);
+}
+
+.ds-price__num {
+  font-family: var(--font-family-number);
+}
+
+.ds-price__label {
+  font-family: var(--font-family-thai);
 }
