@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import loadingSpinner from '../assets/icons/loading-spinner.png'
 import { MookaIllustration } from '../design-system/MookaIllustration'
 import './LoadingScreen.css'
 
@@ -19,8 +20,12 @@ export function LoadingScreen({ onDone, delayMs = 2000 }: LoadingScreenProps) {
         variant="phone"
         className="mb-2 block h-auto w-40 object-contain"
       />
-      <div
-        className="size-7 animate-[spin_0.8s_linear_infinite] rounded-full border-[2.5px] border-transparent border-t-[#9ca3af] border-r-[#d1d5db] border-b-border"
+      <img
+        src={loadingSpinner}
+        alt=""
+        width={28}
+        height={28}
+        className="size-7 animate-[spin_0.8s_linear_infinite]"
         role="status"
         aria-label="กำลังโหลด"
       />
