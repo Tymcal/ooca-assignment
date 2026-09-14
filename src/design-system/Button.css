@@ -12,9 +12,21 @@
   transition: opacity 0.15s ease, transform 0.15s ease;
 }
 
+.ds-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
 .ds-button:active {
   transform: scale(0.98);
   opacity: 0.92;
+}
+
+.ds-button:disabled:active {
+  transform: none;
+  opacity: 0.45;
 }
 
 .ds-button--primary {

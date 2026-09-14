@@ -12,8 +12,8 @@
 
 ### TASK-1.1.1: Design tokens + global shell
 
-- **Detail:** Define CSS custom properties (primary teal, mint backgrounds, text colors, radii, shadows, spacing). Load Prompt font. Build AppShell with iOS status bar (9:41, cellular, Wi-Fi, battery) and Dynamic Island. Responsive: full-bleed on mobile; centered ~430px column from 768px up.
-- **Deliverable:** `src/design-system/tokens.css`, `src/shell/AppShell.tsx`, `src/shell/StatusBar.tsx`
+- **Detail:** Define CSS custom properties (primary teal, mint backgrounds, text colors, radii, shadows, spacing). Load Prompt font. Build AppShell as a real mobile web shell: `viewport-fit=cover` plus `env(safe-area-inset-*)` padding (no painted iOS status bar / Dynamic Island). Responsive: full-bleed on mobile; centered ~430px column from 768px up.
+- **Deliverable:** `src/design-system/tokens.css`, `src/shell/AppShell.tsx`
 - **Status:** done
 
 ### TASK-1.1.2: Shared primitives
@@ -44,9 +44,9 @@
 **I want** to describe my issue to Mooka  
 **So that** matching can run
 
-### TASK-1.3.1: Inquiry screen + keyboard chrome
+### TASK-1.3.1: Inquiry screen + real typing
 
-- **Detail:** Teal back chevron to list, chat bubble prompt, floating “อธิบายเสร็จแล้ว” CTA to loading, decorative iOS Thai keyboard chrome (non-functional).
+- **Detail:** Teal back chevron to list, chat bubble prompt, controlled textarea (device keyboard on any Android/iOS), floating “อธิบายเสร็จแล้ว” CTA enabled when trimmed text is non-empty (advances to loading).
 - **Deliverable:** `src/screens/InquiryScreen.tsx`
 - **Status:** done
 

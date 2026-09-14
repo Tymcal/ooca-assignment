@@ -22,9 +22,6 @@
   --color-tag-orange: #ffedd5;
   --color-tag-orange-text: #9a3412;
   --color-icon-inactive: #9ca3af;
-  --color-keyboard: #d1d5db;
-  --color-keyboard-key: #ffffff;
-  --color-keyboard-done: #3b82f6;
 
   --radius-card: 18px;
   --radius-banner: 16px;
@@ -56,8 +53,5 @@
 
   --touch-min: 44px;
   --shell-max-width: 430px;
-  --status-bar-height: 54px;
   --nav-height: 64px;
-  --island-width: 126px;
-  --island-height: 37px;
 }

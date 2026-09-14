@@ -1,7 +1,7 @@
-import { Avatar } from '../design-system/Avatar'
-import { Button } from '../design-system/Button'
-import { Card } from '../design-system/Card'
-import { Chip } from '../design-system/Chip'
+import { Avatar } from '../design-system/Avatar';
+import { Button } from '../design-system/Button';
+import { Card } from '../design-system/Card';
+import { Chip } from '../design-system/Chip';
 import {
   CoinIcon,
   FilterIcon,
@@ -9,18 +9,18 @@ import {
   SearchIcon,
   SortIcon,
   StarIcon,
-} from '../design-system/icons'
-import { MookaIllustration } from '../design-system/MookaIllustration'
-import { Price } from '../design-system/Price'
-import { Tag } from '../design-system/Tag'
-import { listPsychologists } from '../domain/mockData'
-import type { Psychologist } from '../domain/psychologist'
-import { BottomNav } from '../shell/BottomNav'
-import './PsychologistListScreen.css'
+} from '../design-system/icons';
+import { MookaIllustration } from '../design-system/MookaIllustration';
+import { Price } from '../design-system/Price';
+import { Tag } from '../design-system/Tag';
+import { listPsychologists } from '../domain/mockData';
+import type { Psychologist } from '../domain/psychologist';
+import { BottomNav } from '../shell/BottomNav';
+import './PsychologistListScreen.css';
 
 type PsychologistListScreenProps = {
-  onStartMatching: () => void
-}
+  onStartMatching: () => void;
+};
 
 export function PsychologistListScreen({
   onStartMatching,
@@ -50,9 +50,12 @@ export function PsychologistListScreen({
         </div>
 
         <section className="list-screen__promo" aria-label="โปรโมชันมูก้า">
-          <MookaIllustration variant="coins" className="list-screen__promo-art" />
+          <MookaIllustration
+            variant="coins"
+            className="list-screen__promo-art"
+          />
           <div className="list-screen__promo-body">
-            <p>ไม่รู้จะเลือกคนไหนหรอ ให้มูก้าช่วยมั้ย...</p>
+            <p>ไม่รู้จะเลือกคนไหนหรอ ให้มูก้าช่วยหาให้มั้ย...</p>
             <Button size="sm" onClick={onStartMatching}>
               ช่วยหาให้หน่อย
             </Button>
@@ -69,10 +72,14 @@ export function PsychologistListScreen({
       </div>
       <BottomNav activeTab={1} />
     </div>
-  )
+  );
 }
 
-function PsychologistListCard({ psychologist }: { psychologist: Psychologist }) {
+function PsychologistListCard({
+  psychologist,
+}: {
+  psychologist: Psychologist;
+}) {
   return (
     <Card className="psych-card">
       <Avatar src={psychologist.avatarUrl} alt={psychologist.name} size={72} />
@@ -81,7 +88,10 @@ function PsychologistListCard({ psychologist }: { psychologist: Psychologist }) 
         <div className="psych-card__role">
           <span>{psychologist.role}</span>
           {psychologist.rating != null ? (
-            <span className="psych-card__rating" aria-label={`เรตติ้ง ${psychologist.rating}`}>
+            <span
+              className="psych-card__rating"
+              aria-label={`เรตติ้ง ${psychologist.rating}`}
+            >
               <StarIcon />
             </span>
           ) : null}
@@ -101,5 +111,5 @@ function PsychologistListCard({ psychologist }: { psychologist: Psychologist }) 
         </div>
       </div>
     </Card>
-  )
+  );
 }

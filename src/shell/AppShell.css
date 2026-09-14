@@ -15,6 +15,10 @@
   min-height: 100dvh;
   background: var(--color-bg);
   overflow: hidden;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
 }
 
 .app-shell--mint {
@@ -51,5 +55,9 @@
     max-height: calc(100dvh - 48px);
     border-radius: 28px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 }

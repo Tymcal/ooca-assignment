@@ -3,7 +3,7 @@
   grid-template-columns: repeat(5, 1fr);
   align-items: center;
   height: var(--nav-height);
-  padding: 6px 4px calc(6px + env(safe-area-inset-bottom, 0px));
+  padding: 6px 4px;
   background: var(--color-bg);
   box-shadow: var(--shadow-nav);
   flex-shrink: 0;

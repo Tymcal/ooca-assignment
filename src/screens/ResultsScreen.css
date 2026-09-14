@@ -112,7 +112,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: calc(var(--nav-height) + 12px + env(safe-area-inset-bottom, 0px));
+  bottom: calc(var(--nav-height) + 12px);
   display: flex;
   justify-content: center;
   padding: 0 var(--space-4);
