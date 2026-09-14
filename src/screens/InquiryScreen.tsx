@@ -42,7 +42,7 @@ export function InquiryScreen({ onBack, onComplete }: InquiryScreenProps) {
 
   return (
     <div className="inquiry-screen" ref={rootRef}>
-      <div className="inquiry-screen__scroll">
+      <div className="inquiry-screen__top">
         <button
           type="button"
           className="inquiry-screen__back"
@@ -51,7 +51,9 @@ export function InquiryScreen({ onBack, onComplete }: InquiryScreenProps) {
         >
           <BackChevronIcon />
         </button>
+      </div>
 
+      <div className="inquiry-screen__scroll">
         <div className="inquiry-screen__body">
           <p className="inquiry-screen__prompt" role="status">
             มีปัญหาเกี่ยวกับอะไรหรือมีเรื่องที่อยากจะเล่ามั้ย อธิบายให้มูก้าฟังหน่อย

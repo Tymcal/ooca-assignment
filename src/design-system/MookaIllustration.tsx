@@ -18,7 +18,7 @@ const VARIANT_SRC: Record<MookaVariant, string> = {
 const VARIANT_SIZE: Record<MookaVariant, { width: number; height: number }> = {
   coins: { width: 100, height: 78 },
   phone: { width: 160, height: 124 },
-  friends: { width: 200, height: 166 },
+  friends: { width: 183, height: 152 },
 }
 
 export function MookaIllustration({

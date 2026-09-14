@@ -7,13 +7,10 @@
   background: var(--color-turquoise-subtle);
 }
 
-.inquiry-screen__scroll {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  min-height: 0;
-  overflow: auto;
-  padding: var(--space-2) var(--space-4) var(--space-3);
+.inquiry-screen__top {
+  flex-shrink: 0;
+  padding: var(--space-2) var(--space-4) 0;
+  background: var(--color-turquoise-subtle);
 }
 
 .inquiry-screen__back {
@@ -24,7 +21,15 @@
   height: var(--touch-min);
   margin-left: -8px;
   color: var(--color-primary);
-  flex-shrink: 0;
+}
+
+.inquiry-screen__scroll {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: auto;
+  padding: 0 var(--space-4) var(--space-3);
 }
 
 .inquiry-screen__body {

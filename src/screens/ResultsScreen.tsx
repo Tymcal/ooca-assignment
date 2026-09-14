@@ -17,16 +17,19 @@ type ResultsScreenProps = {
 export function ResultsScreen({ onBack, onFindAnother }: ResultsScreenProps) {
   return (
     <div className="results-screen">
+      <div className="results-screen__top">
+        <button
+          type="button"
+          className="results-screen__back"
+          onClick={onBack}
+          aria-label="ย้อนกลับ"
+        >
+          <BackChevronIcon />
+        </button>
+      </div>
+
       <div className="results-screen__scroll">
         <div className="results-screen__header">
-          <button
-            type="button"
-            className="results-screen__back"
-            onClick={onBack}
-            aria-label="ย้อนกลับ"
-          >
-            <BackChevronIcon />
-          </button>
           <MookaIllustration
             variant="friends"
             className="results-screen__art"
@@ -45,13 +48,14 @@ export function ResultsScreen({ onBack, onFindAnother }: ResultsScreenProps) {
             </li>
           ))}
         </ul>
+
+        <div className="results-screen__cta-wrap">
+          <Button className="results-screen__cta" onClick={onFindAnother}>
+            หาผู้ให้คำปรึกษาคนอื่น
+          </Button>
+        </div>
       </div>
 
-      <div className="results-screen__fab-wrap">
-        <Button className="results-screen__fab" onClick={onFindAnother}>
-          หาผู้ให้คำปรึกษาคนอื่น
-        </Button>
-      </div>
       <BottomNav activeTab={1} />
     </div>
   );
