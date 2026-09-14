@@ -1,0 +1,55 @@
+.app-page {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  background: var(--color-bg-page);
+  padding: 0;
+}
+
+.app-shell {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100dvh;
+  background: var(--color-bg);
+  overflow: hidden;
+}
+
+.app-shell--mint {
+  background: linear-gradient(
+    180deg,
+    var(--color-bg-mint-soft) 0%,
+    var(--color-bg-mint) 45%,
+    var(--color-bg) 100%
+  );
+}
+
+.app-shell--white {
+  background: var(--color-bg);
+}
+
+.app-shell__body {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .app-page {
+    padding: 24px 16px;
+    align-items: center;
+  }
+
+  .app-shell {
+    max-width: var(--shell-max-width);
+    min-height: min(900px, calc(100dvh - 48px));
+    max-height: calc(100dvh - 48px);
+    border-radius: 28px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+  }
+}

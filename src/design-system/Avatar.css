@@ -1,0 +1,6 @@
+.ds-avatar {
+  border-radius: var(--radius-avatar);
+  object-fit: cover;
+  flex-shrink: 0;
+  background: var(--color-bg-search);
+}

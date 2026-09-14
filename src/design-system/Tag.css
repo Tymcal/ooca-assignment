@@ -1,0 +1,24 @@
+.ds-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.3;
+}
+
+.ds-tag--yellow {
+  background: var(--color-tag-yellow);
+  color: var(--color-tag-yellow-text);
+}
+
+.ds-tag--blue {
+  background: var(--color-tag-blue);
+  color: var(--color-tag-blue-text);
+}
+
+.ds-tag--orange {
+  background: var(--color-tag-orange);
+  color: var(--color-tag-orange-text);
+}

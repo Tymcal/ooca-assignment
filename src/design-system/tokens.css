@@ -1,0 +1,63 @@
+:root {
+  --color-primary: #14b8a6;
+  --color-primary-dark: #0d9488;
+  --color-bg: #ffffff;
+  --color-bg-mint: #e0f2f1;
+  --color-bg-mint-soft: #f0fdf4;
+  --color-bg-page: #f3f4f6;
+  --color-bg-search: #f3f4f6;
+  --color-bg-chip: #f9fafb;
+  --color-bg-promo: #dbeafe;
+  --color-bg-bubble: #f3f4f6;
+  --color-bg-lang: #dbeafe;
+  --color-text: #1f2937;
+  --color-text-muted: #6b7280;
+  --color-text-secondary: #9ca3af;
+  --color-border: #e5e7eb;
+  --color-star: #fbbf24;
+  --color-tag-yellow: #fef3c7;
+  --color-tag-yellow-text: #92400e;
+  --color-tag-blue: #dbeafe;
+  --color-tag-blue-text: #1e40af;
+  --color-tag-orange: #ffedd5;
+  --color-tag-orange-text: #9a3412;
+  --color-icon-inactive: #9ca3af;
+  --color-keyboard: #d1d5db;
+  --color-keyboard-key: #ffffff;
+  --color-keyboard-done: #3b82f6;
+
+  --radius-card: 18px;
+  --radius-banner: 16px;
+  --radius-pill: 999px;
+  --radius-search: 12px;
+  --radius-avatar: 50%;
+
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.06);
+  --shadow-nav: 0 -2px 12px rgba(0, 0, 0, 0.06);
+  --shadow-fab: 0 6px 20px rgba(20, 184, 166, 0.35);
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  --font-family: 'Prompt', system-ui, sans-serif;
+  --font-size-xs: 11px;
+  --font-size-sm: 13px;
+  --font-size-md: 15px;
+  --font-size-lg: 17px;
+  --font-size-xl: 20px;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+
+  --touch-min: 44px;
+  --shell-max-width: 430px;
+  --status-bar-height: 54px;
+  --nav-height: 64px;
+  --island-width: 126px;
+  --island-height: 37px;
+}
