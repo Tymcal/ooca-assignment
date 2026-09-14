@@ -1,9 +1,10 @@
 .inquiry-screen {
+  --keyboard-inset: 0px;
   display: flex;
   flex-direction: column;
   flex: 1;
   min-height: 0;
-  background: var(--color-bg);
+  background: var(--color-turquoise-subtle);
 }
 
 .inquiry-screen__scroll {
@@ -26,7 +27,7 @@
   flex-shrink: 0;
 }
 
-.inquiry-screen__chat {
+.inquiry-screen__body {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -35,27 +36,12 @@
   min-height: 0;
 }
 
-.inquiry-screen__bubble {
-  position: relative;
+.inquiry-screen__prompt {
+  margin: 0;
   max-width: 85%;
-  padding: var(--space-3) var(--space-4);
-  background: var(--color-bg-bubble);
-  border-radius: 18px 18px 18px 6px;
-  color: var(--color-text-muted);
+  color: var(--color-gray-500);
   font-size: var(--font-size-md);
   line-height: 1.5;
-}
-
-.inquiry-screen__bubble::before {
-  content: '';
-  position: absolute;
-  left: -4px;
-  bottom: 10px;
-  width: 12px;
-  height: 12px;
-  background: var(--color-bg-bubble);
-  border-radius: 0 0 0 10px;
-  transform: rotate(25deg);
 }
 
 .inquiry-screen__field {
@@ -84,31 +70,34 @@
   flex: 1;
   min-height: 140px;
   resize: none;
-  padding: var(--space-3) var(--space-4);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-banner);
-  background: var(--color-bg);
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
   color: var(--color-text);
   font-size: var(--font-size-md);
   line-height: 1.5;
   outline: none;
+  box-shadow: none;
 }
 
 .inquiry-screen__input::placeholder {
-  color: var(--color-text-secondary);
+  color: var(--color-gray-500);
 }
 
 .inquiry-screen__input:focus {
-  border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.15);
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
 
 .inquiry-screen__cta-wrap {
   flex-shrink: 0;
   display: flex;
   justify-content: flex-end;
-  padding: var(--space-3) var(--space-4) var(--space-4);
-  background: var(--color-bg);
+  padding: var(--space-3) var(--space-4)
+    calc(var(--space-4) + var(--keyboard-inset));
+  background: var(--color-turquoise-subtle);
 }
 
 .inquiry-screen__cta {
@@ -122,7 +111,7 @@
 }
 
 @media (max-height: 700px) {
-  .inquiry-screen__chat {
+  .inquiry-screen__body {
     padding-top: var(--space-2);
     gap: var(--space-3);
   }

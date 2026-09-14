@@ -34,6 +34,10 @@
   background: var(--color-bg);
 }
 
+.app-shell--turquoise {
+  background: var(--color-turquoise-subtle);
+}
+
 .app-shell__body {
   position: relative;
   flex: 1;

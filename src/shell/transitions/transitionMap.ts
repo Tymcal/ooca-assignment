@@ -24,6 +24,9 @@ export const TRANSITION_DURATION_MS = 300
 
 export function shellBackgroundFor(
   screen: ScreenId,
-): 'white' | 'mint' {
+): 'white' | 'mint' | 'turquoise' {
+  if (screen === 'inquiry') {
+    return 'turquoise'
+  }
   return screen === 'loading' || screen === 'results' ? 'mint' : 'white'
 }

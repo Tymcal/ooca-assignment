@@ -15,10 +15,12 @@
   --color-bg-search: var(--color-bg-search);
   --color-bg-chip: var(--color-bg-chip);
   --color-bg-bubble: var(--color-bg-bubble);
+  --color-turquoise-subtle: var(--color-turquoise-subtle);
   --color-bg-lang: var(--color-bg-lang);
   --color-text: var(--color-text);
   --color-text-muted: var(--color-text-muted);
   --color-text-secondary: var(--color-text-secondary);
+  --color-gray-500: var(--color-gray-500);
   --color-border: var(--color-border);
   --color-star: var(--color-star);
   --color-icon-inactive: var(--color-icon-inactive);

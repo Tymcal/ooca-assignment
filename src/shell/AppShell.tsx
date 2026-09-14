@@ -3,7 +3,7 @@ import './AppShell.css'
 
 type AppShellProps = {
   children: ReactNode
-  background?: 'white' | 'mint'
+  background?: 'white' | 'mint' | 'turquoise'
 }
 
 export function AppShell({ children, background = 'white' }: AppShellProps) {

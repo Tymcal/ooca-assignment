@@ -50,6 +50,12 @@
 - **Deliverable:** `src/screens/InquiryScreen.tsx`
 - **Status:** done
 
+### TASK-1.3.2: Inquiry visual + keyboard polish
+
+- **Detail:** Flat turquoise-subtle (`#DBF0EE`) background; plain gray/500 (`#A6A6A6`) prompt with no chat bubble or input border; sticky bottom-right “อธิบายเสร็จแล้ว” CTA lifted above the on-screen keyboard via `visualViewport` inset.
+- **Deliverable:** tokens in `src/design-system/tokens.css`, updated `InquiryScreen`, AppShell `turquoise` background for inquiry
+- **Status:** done
+
 ---
 
 ## US-1.4: Loading and matched results

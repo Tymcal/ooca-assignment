@@ -10,11 +10,13 @@
   --color-bg-promo-top: #d2deed;
   --color-bg-promo-bottom: #dbf0ee;
   --color-bg-promo: var(--color-bg-promo-bottom);
+  --color-turquoise-subtle: #dbf0ee;
   --color-bg-bubble: #f3f4f6;
   --color-bg-lang: #dbeafe;
   --color-text: #1f2937;
   --color-text-muted: #6b7280;
   --color-text-secondary: #9ca3af;
+  --color-gray-500: #a6a6a6;
   --color-border: #e5e7eb;
   --color-star: #fbbf24;
   --color-tag-yellow: #fef3c7;
