@@ -1,6 +1,53 @@
 @import './design-system/fonts.css';
 @import './design-system/tokens.css';
 
+/* Theme + utilities only: skip Preflight so existing screen/CSS resets stay intact. */
+@import 'tailwindcss/theme' layer(theme);
+@import 'tailwindcss/utilities' layer(utilities);
+
+@theme inline {
+  --color-primary: var(--color-primary);
+  --color-primary-dark: var(--color-primary-dark);
+  --color-bg: var(--color-bg);
+  --color-bg-mint: var(--color-bg-mint);
+  --color-bg-mint-soft: var(--color-bg-mint-soft);
+  --color-bg-page: var(--color-bg-page);
+  --color-bg-search: var(--color-bg-search);
+  --color-bg-chip: var(--color-bg-chip);
+  --color-bg-bubble: var(--color-bg-bubble);
+  --color-bg-lang: var(--color-bg-lang);
+  --color-text: var(--color-text);
+  --color-text-muted: var(--color-text-muted);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-border: var(--color-border);
+  --color-star: var(--color-star);
+  --color-icon-inactive: var(--color-icon-inactive);
+
+  --spacing-1: var(--space-1);
+  --spacing-2: var(--space-2);
+  --spacing-3: var(--space-3);
+  --spacing-4: var(--space-4);
+  --spacing-5: var(--space-5);
+  --spacing-6: var(--space-6);
+  --spacing-8: var(--space-8);
+
+  --radius-card: var(--radius-card);
+  --radius-banner: var(--radius-banner);
+  --radius-pill: var(--radius-pill);
+  --radius-search: var(--radius-search);
+  --radius-avatar: var(--radius-avatar);
+
+  --font-family-sans: var(--font-family);
+  --text-xs: var(--font-size-xs);
+  --text-sm: var(--font-size-sm);
+  --text-md: var(--font-size-md);
+  --text-lg: var(--font-size-lg);
+  --text-xl: var(--font-size-xl);
+  --font-weight-regular: var(--font-weight-regular);
+  --font-weight-medium: var(--font-weight-medium);
+  --font-weight-bold: var(--font-weight-bold);
+}
+
 *,
 *::before,
 *::after {

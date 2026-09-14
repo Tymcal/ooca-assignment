@@ -80,7 +80,7 @@
   flex-direction: row;
   align-items: center;
   gap: var(--space-3);
-  padding: var(--space-3) var(--space-4);
+  padding: var(--space-4) var(--space-4);
   background: linear-gradient(
     180deg,
     var(--color-bg-promo-top),

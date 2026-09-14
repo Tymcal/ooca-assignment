@@ -49,18 +49,20 @@ export function PsychologistListScreen({
           <Chip icon={<CoinIcon />}>ช่วงราคา</Chip>
         </div>
 
-        <section className="list-screen__promo" aria-label="โปรโมชันมูก้า">
+        <section className="list-screen__promo" aria-label="มูก้าช่วยหา">
           <MookaIllustration
             variant="coins"
             className="list-screen__promo-art"
           />
-          <div className="list-screen__promo-body">
-            <p className="list-screen__promo-line list-screen__promo-line--dark">
-              ไม่รู้จะเลือกคนไหนหรอ
-            </p>
-            <p className="list-screen__promo-line list-screen__promo-line--primary">
-              ให้มูก้าช่วยหาให้มั้ย
-            </p>
+          <div className="list-screen__promo-body !gap-2">
+            <div className="list-screen__promo-lines">
+              <p className="list-screen__promo-line list-screen__promo-line--dark">
+                ไม่รู้จะเลือกคนไหนหรอ
+              </p>
+              <p className="list-screen__promo-line list-screen__promo-line--primary">
+                ให้มูก้าช่วยหาให้มั้ย
+              </p>
+            </div>
             <Button
               size="sm"
               className="list-screen__promo-cta"
