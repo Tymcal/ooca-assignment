@@ -1,0 +1,83 @@
+.screen-stage {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  width: 100%;
+  overflow: hidden;
+  will-change: transform, opacity;
+}
+
+.screen-stage--enter-move-in {
+  z-index: 2;
+  animation: screen-move-in 300ms ease-out both;
+}
+
+.screen-stage--exit-move-in {
+  z-index: 1;
+}
+
+.screen-stage--enter-move-out {
+  z-index: 1;
+}
+
+.screen-stage--exit-move-out {
+  z-index: 2;
+  animation: screen-move-out 300ms ease-out both;
+}
+
+.screen-stage--enter-dissolve {
+  z-index: 2;
+  animation: screen-dissolve-in 300ms ease-out both;
+}
+
+.screen-stage--exit-dissolve {
+  z-index: 1;
+  animation: screen-dissolve-out 300ms ease-out both;
+}
+
+@keyframes screen-move-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes screen-move-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes screen-dissolve-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes screen-dissolve-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .screen-stage--enter-move-in,
+  .screen-stage--exit-move-out,
+  .screen-stage--enter-dissolve,
+  .screen-stage--exit-dissolve {
+    animation-duration: 1ms;
+  }
+}

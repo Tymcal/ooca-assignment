@@ -88,4 +88,4 @@
 
 - **Detail:** List → Inquiry: move-in ease-out (slide from right). Inquiry → Loading and Loading → Results: dissolve ease-out (opacity crossfade). Back/FAB to List: move-out ease-out (slide to right). Duration 300ms. Dual-render outgoing/incoming in ScreenRouter; shell background follows destination.
 - **Deliverable:** `src/shell/transitions/`, updated `src/shell/ScreenRouter.tsx`
-- **Status:** in progress
+- **Status:** done
