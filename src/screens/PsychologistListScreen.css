@@ -77,15 +77,20 @@
 
 .list-screen__promo {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: var(--space-3);
   padding: var(--space-3) var(--space-4);
-  background: var(--color-bg-promo);
+  background: linear-gradient(
+    180deg,
+    var(--color-bg-promo-top),
+    var(--color-bg-promo-bottom)
+  );
   border-radius: var(--radius-banner);
 }
 
 .list-screen__promo-art {
-  flex-shrink: 0;
+  flex: 0 0 auto;
   display: block;
   width: 100px;
   height: auto;
@@ -94,19 +99,33 @@
 
 .list-screen__promo-body {
   flex: 1;
+  min-width: 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  gap: var(--space-3);
+  align-items: flex-start;
+  text-align: left;
+  gap: var(--space-1);
 }
 
-.list-screen__promo-body p {
+.list-screen__promo-line {
   margin: 0;
   width: 100%;
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-medium);
-  color: var(--color-text);
   line-height: 1.45;
+}
+
+.list-screen__promo-line--dark {
+  color: var(--color-text);
+}
+
+.list-screen__promo-line--primary {
+  color: var(--color-primary);
+}
+
+.list-screen__promo-cta {
+  width: 100%;
+  align-self: stretch;
 }
 
 .list-screen__cards {

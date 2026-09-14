@@ -55,8 +55,17 @@ export function PsychologistListScreen({
             className="list-screen__promo-art"
           />
           <div className="list-screen__promo-body">
-            <p>ไม่รู้จะเลือกคนไหนหรอ ให้มูก้าช่วยหาให้มั้ย...</p>
-            <Button size="sm" onClick={onStartMatching}>
+            <p className="list-screen__promo-line list-screen__promo-line--dark">
+              ไม่รู้จะเลือกคนไหนหรอ
+            </p>
+            <p className="list-screen__promo-line list-screen__promo-line--primary">
+              ให้มูก้าช่วยหาให้มั้ย
+            </p>
+            <Button
+              size="sm"
+              className="list-screen__promo-cta"
+              onClick={onStartMatching}
+            >
               ช่วยหาให้หน่อย
             </Button>
           </div>

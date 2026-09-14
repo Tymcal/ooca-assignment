@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #14b8a6;
+  --color-primary: #00c4b3;
   --color-primary-dark: #0d9488;
   --color-bg: #ffffff;
   --color-bg-mint: #e0f2f1;
@@ -7,7 +7,9 @@
   --color-bg-page: #f3f4f6;
   --color-bg-search: #f3f4f6;
   --color-bg-chip: #f9fafb;
-  --color-bg-promo: #dbeafe;
+  --color-bg-promo-top: #d2deed;
+  --color-bg-promo-bottom: #dbf0ee;
+  --color-bg-promo: var(--color-bg-promo-bottom);
   --color-bg-bubble: #f3f4f6;
   --color-bg-lang: #dbeafe;
   --color-text: #1f2937;
