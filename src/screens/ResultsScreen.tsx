@@ -60,24 +60,26 @@ export function ResultsScreen({ onBack, onFindAnother }: ResultsScreenProps) {
 function ResultCard({ psychologist }: { psychologist: Psychologist }) {
   return (
     <Card className="result-card">
-      <Avatar src={psychologist.avatarUrl} alt={psychologist.name} size={64} />
-      <div className="result-card__body">
-        <h2 className="result-card__name">{psychologist.name}</h2>
-        <div className="result-card__meta">
-          <span className="result-card__role">{psychologist.role}</span>
-          {psychologist.rating != null ? (
-            <span className="result-card__rating">
-              <StarIcon />
-              {psychologist.rating.toFixed(1)}
-            </span>
-          ) : null}
+      <div className="result-card__main">
+        <Avatar src={psychologist.avatarUrl} alt={psychologist.name} size={49} />
+        <div className="result-card__info">
+          <h2 className="result-card__name">{psychologist.name}</h2>
+          <div className="result-card__meta">
+            <span className="result-card__role">{psychologist.role}</span>
+            {psychologist.rating != null ? (
+              <span className="result-card__rating">
+                <StarIcon />
+                {psychologist.rating.toFixed(1)}
+              </span>
+            ) : null}
+          </div>
         </div>
-        <div className="result-card__price">
-          <Price
-            amount={psychologist.priceBaht}
-            durationMinutes={psychologist.durationMinutes}
-          />
-        </div>
+      </div>
+      <div className="result-card__price">
+        <Price
+          amount={psychologist.priceBaht}
+          durationMinutes={psychologist.durationMinutes}
+        />
       </div>
     </Card>
   );

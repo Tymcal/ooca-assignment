@@ -136,12 +136,18 @@
 
 .psych-card {
   display: flex;
+  flex-direction: column;
   gap: var(--space-3);
-  align-items: flex-start;
 }
 
-.psych-card__body {
-  flex: 1;
+.psych-card__main {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-width: 0;
+}
+
+.psych-card__info {
   min-width: 0;
   display: flex;
   flex-direction: column;
@@ -179,5 +185,4 @@
 .psych-card__price {
   display: flex;
   justify-content: flex-end;
-  margin-top: 2px;
 }

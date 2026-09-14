@@ -66,12 +66,20 @@
 
 .result-card {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   gap: var(--space-3);
-  align-items: flex-start;
+  height: 134px;
 }
 
-.result-card__body {
-  flex: 1;
+.result-card__main {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-width: 0;
+}
+
+.result-card__info {
   min-width: 0;
   display: flex;
   flex-direction: column;

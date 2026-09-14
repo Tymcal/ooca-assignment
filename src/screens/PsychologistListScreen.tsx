@@ -93,33 +93,35 @@ function PsychologistListCard({
 }) {
   return (
     <Card className="psych-card">
-      <Avatar src={psychologist.avatarUrl} alt={psychologist.name} size={72} />
-      <div className="psych-card__body">
-        <h2 className="psych-card__name">{psychologist.name}</h2>
-        <div className="psych-card__role">
-          <span>{psychologist.role}</span>
-          {psychologist.rating != null ? (
-            <span
-              className="psych-card__rating"
-              aria-label={`เรตติ้ง ${psychologist.rating}`}
-            >
-              <StarIcon />
-            </span>
-          ) : null}
-        </div>
-        {psychologist.tags.length > 0 ? (
-          <div className="psych-card__tags">
-            {psychologist.tags.map((tag) => (
-              <Tag key={tag.label} label={tag.label} variant={tag.variant} />
-            ))}
+      <div className="psych-card__main">
+        <Avatar src={psychologist.avatarUrl} alt={psychologist.name} size={49} />
+        <div className="psych-card__info">
+          <h2 className="psych-card__name">{psychologist.name}</h2>
+          <div className="psych-card__role">
+            <span>{psychologist.role}</span>
+            {psychologist.rating != null ? (
+              <span
+                className="psych-card__rating"
+                aria-label={`เรตติ้ง ${psychologist.rating}`}
+              >
+                <StarIcon />
+              </span>
+            ) : null}
           </div>
-        ) : null}
-        <div className="psych-card__price">
-          <Price
-            amount={psychologist.priceBaht}
-            durationMinutes={psychologist.durationMinutes}
-          />
         </div>
+      </div>
+      {psychologist.tags.length > 0 ? (
+        <div className="psych-card__tags">
+          {psychologist.tags.map((tag) => (
+            <Tag key={tag.label} label={tag.label} variant={tag.variant} />
+          ))}
+        </div>
+      ) : null}
+      <div className="psych-card__price">
+        <Price
+          amount={psychologist.priceBaht}
+          durationMinutes={psychologist.durationMinutes}
+        />
       </div>
     </Card>
   );
