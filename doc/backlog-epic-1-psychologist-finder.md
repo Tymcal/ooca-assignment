@@ -12,8 +12,8 @@
 
 ### TASK-1.1.1: Design tokens + global shell
 
-- **Detail:** Define CSS custom properties (primary teal, mint backgrounds, text colors, radii, shadows, spacing). Load Prompt font. Build AppShell as a real mobile web shell: `viewport-fit=cover` plus `env(safe-area-inset-*)` padding (no painted iOS status bar / Dynamic Island). Responsive: full-bleed on mobile; centered ~430px column from 768px up.
-- **Deliverable:** `src/design-system/tokens.css`, `src/shell/AppShell.tsx`
+- **Detail:** Define CSS custom properties (primary teal, mint backgrounds, text colors, radii, shadows, spacing). Load bilingual fonts: Gotham Rounded (local) for English Latin, Prompt (Google Fonts) for Thai via glyph fallback. Build AppShell as a real mobile web shell: `viewport-fit=cover` plus `env(safe-area-inset-*)` padding (no painted iOS status bar / Dynamic Island). Responsive: full-bleed on mobile; centered ~430px column from 768px up.
+- **Deliverable:** `src/design-system/tokens.css`, `src/design-system/fonts.css`, `src/shell/AppShell.tsx`
 - **Status:** done
 
 ### TASK-1.1.2: Shared primitives
@@ -75,3 +75,17 @@
 - **Detail:** Screen state machine: List → Inquiry → Loading → Results; back and FAB paths. Touch targets ≥44px; chip scroll; short-viewport keyboard handling.
 - **Deliverable:** `src/shell/ScreenRouter.tsx`, wired `App.tsx`
 - **Status:** done
+
+---
+
+## US-1.5: Screen transition motion
+
+**As a** user  
+**I want** smooth transitions when moving between matching screens  
+**So that** the flow feels intentional and polished
+
+### TASK-1.5.1: Transition map + animated router layer
+
+- **Detail:** List → Inquiry: move-in ease-out (slide from right). Inquiry → Loading and Loading → Results: dissolve ease-out (opacity crossfade). Back/FAB to List: move-out ease-out (slide to right). Duration 300ms. Dual-render outgoing/incoming in ScreenRouter; shell background follows destination.
+- **Deliverable:** `src/shell/transitions/`, updated `src/shell/ScreenRouter.tsx`
+- **Status:** in progress
